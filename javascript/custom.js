@@ -31,14 +31,16 @@
      }
 
      $(window).scroll(function() {
-         if ($(this).scrollTop() > 300) {
+         if ($(this).scrollTop() > 120) {
              $('#scrolltop').fadeIn();
 			  $('html').addClass('fixed');
+			  $('.banner').slideUp(300);
+			  
          } else {
              $('#scrolltop').fadeOut();
-			 if ($(this).scrollTop() <100) {
+			 
 				 $('html').removeClass('fixed');
-				 }
+				$('.banner').fadeIn();
 			  
          }
      });

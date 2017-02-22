@@ -13,6 +13,7 @@ body {
     color: #5e6977;
     
 }
+.fixed body{padding-top:250px}
 img {
     max-width: 100%
 }
@@ -22,14 +23,13 @@ a:hover {
 header {
    padding: 38px 0px;
    background: url(../images/bg_header.jpg) no-repeat; background-size:cover;
-   transition: all .2s;
-   
+   transition:all .5s;
 }
 .fixed header { box-shadow: 0 0 5px 2px #e8e8e8;
     position: fixed;
     top: 0;
     width: 100%;
-	
+	transition:all .5s;
     z-index: 999}
 .logo {
    display:none;
@@ -101,8 +101,13 @@ footer a .fa {width:45px; height:45px; background:#fff; border-radius:50%; line-
     padding-right: 0
 }
 
-.fixed .banner{display:none;}
 .fixed header{padding-top:0; padding-bottom:0;}
+.fixed .menu_logo img{width:200px; height:auto; transition:all .5s;}
+.intro{transition:all .5s; background:#f4f3f4; padding-bottom:30px;}
+.steps{padding:30px 0px; background:#fff;}
+.steps p{margin:0 20%;}
+.arrow_steps:after{content:url('../images/arrow-left.png'); position:absolute; right:0; top:10px;}
+.step_img{margin-bottom:30px;}
 .jumbotron h1 {
     font-family: 'Roboto-Light';
     font-size: 52px;
@@ -157,14 +162,14 @@ footer a .fa {width:45px; height:45px; background:#fff; border-radius:50%; line-
     margin-top: 1px;
     position: absolute
 }
-.slider .row {
+.steps .row {
 	display:-webkit-flex;
     display:-webkit-box;
     display: flex;
-    height: 440px;
-	-webkit-box-align: center; /* align-items */
+    -webkit-box-align: center; /* align-items */
     align-items: center
 }
+
 .my-slider {
     width: 64%
 }
